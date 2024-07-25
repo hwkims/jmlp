@@ -23,18 +23,19 @@
             position: absolute;
             top: 830px;
             left: 444px;
-            font-size: 50px;
+            font-size: 60px;
             background-color: transparent;
             width: 630px;
             height: 250px;
             padding-bottom: 50px;
             text-align: center;
             align-content: center;
-            font-family: 'Malgun Gothic', sans-serif;
+            font-family: 'Gothic', sans-serif; /* 고딕체로 변경 */
             border: none;
             border-radius: 50%;
             resize: none;
-            line-height:60px;
+            line-height:80px;
+            letter-spacing: -5px;
         }
         button {
             position: absolute;
@@ -82,14 +83,14 @@ canvas.height = 1075;
                 ctx.drawImage(backgroundImage, 0, 0);
 
 
-                ctx.font = '50px Malgun Gothic';
+                ctx.font = '60px Gothic'; // 고딕체로 변경
 ctx.textAlign = 'center';
 ctx.textBaseline = 'middle';
 ctx.fillStyle = '#000';
 
 const textareaValue = textarea.value;
 const lines = textareaValue.split('\n'); // split the text into individual lines
-const lineHeight = 60; // adjust this value to match your font size
+const lineHeight = 80; // adjust this value to match your font size
 let y = textarea.offsetTop + textarea.offsetHeight / 2 - (lines.length - 1) * lineHeight / 2 - 25; // initial y-coordinate with 50px padding
 
 for (let i = 0; i < lines.length; i++) {
